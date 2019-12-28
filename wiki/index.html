@@ -8,15 +8,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <title>UniRails Online Portal</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/unirails512.png" />
+  <title>UniRails - Batcave Online Map</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../img/unirails512.png" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body onresize="sizeContent()" onload="sizeContent()">
   <div class="navcontainer">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#">
-        <img src="img/ur-regular.svg" alt="Logo" style="height: 30px;">
+        <img src="../img/ur-regular.svg" alt="Logo" style="height: 30px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -24,31 +24,23 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="../">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sym">System Map</a>
+            <a class="nav-link" href="../sym">System Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="worldmap">Online Map</a>
+            <a class="nav-link" href="../worldmap">Online Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="wiki">Wiki</a>
+            <a class="nav-link" href="../wiki">Wiki</a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
   <div class="content">
-    <section class="head">
-      <div class="coloroverlay">
-        <div class="container head-content">
-          <img class="img-fluid" width="256" height="" src="img/ur-regular.svg"></img>
-          <br><br>
-          <h1>Welcome to UniRails</h1>
-        </div>
-      </div>
-    </section>
+    <iframe id="wiki" src="https://countryofbatcave.fandom.com/zh-hk/wiki/%E8%9D%99%E8%9D%A0%E6%B4%9E%E5%9C%8B%E5%AE%B6%E5%A4%A7%E5%85%B8_Wiki" width="100%"></iframe>
   </div>
 
   <!-- Optional JavaScript -->
