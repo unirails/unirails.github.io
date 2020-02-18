@@ -1,17 +1,22 @@
 
 //Line Listing
 let SHL = {name:"深卡綫 Shimakaze Line ", short:"SHL", color:"dark_aqua"};
-let SOL = {name:"飛渡外環綫 Stagecoach Outer Loop ", short:"SOL", color:"red"};
+let SOL = {name:"飛渡外環綫 Stagecoach Outer Loop ", short:"SOL", color:"dark_red"};
 let REL = {name:"樂園綫 Resort Line ", short:"REL", color:"light_purple"};
 let KOL = {name:"越海綫 Koshiumi Line ", short:"KOL", color:"red"};
 let CSL = {name:"環海綫 Coastal Line ", short:"CSL", color:"blue"};
 let GCL = {name:"飛渡田園綫 Garden City Line ", short:"GCL", color:"green"};
-let UNA1 = {name:"Uni", color:"dark_red"};
-let UNA2 = {name:"Rails ", color:"blue"};
+let EWL = {name:"東西綫 East West Line", short:"EWL", color:"green"};
+let CDL = {name:"張底綫 Cheung Dai Line", short:"CDL", color:"gold"};
+let WHL = {name:"黃浩廉綫 Wong Ho Lim Line", short:"WHL", color:"dark_green"};
+let NEX = {name:"新手特快 Newcommer's Express", short:"NEX", color:"blue"};
+let NAL = {name:"南埔綫 Nampoa Line", short:"NPL", color:"dark_purple"};
+let NSL = {name:"南北綫 North South Line", short:"NSL", color:"aqua"};
+let PRL = {name:"第一綫 Primum Line", short:"PRL", color:"red"};
 
 //Station Listing
-let STA = {name:"飛渡市 Stagecoach", interchange:[]};
-let DAK = {name:"達卡 Dat Ka", interchange:[]};
+let STA = {name:"飛渡市 Stagecoach", interchange:[NSL,PRL,NAL,NEX,CDL]};
+let DAK = {name:"達卡 Dat Ka", interchange:[CDL,WHL,EWL,NEX]};
 let SHI = {name:"深卡島 Shimakaze", interchange:[]};
 let SHC = {name:"深卡城 Shimakaze City", interchange:[SOL,REL,KOL]};
 let SHN = {name:"沙草灣 Savanna Bay", interchange:[SOL,KOL]};
