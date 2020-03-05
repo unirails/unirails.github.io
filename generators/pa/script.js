@@ -22,3 +22,14 @@ function toggleDn() {
     up.style.display = "none";
   }
 }
+
+function getLineInput() {
+  var x = document.getElementById("selectLineName").value;
+  if (x == "SHL") {
+    setLine(SHL);
+  } else if (x == "KOL") {
+    setLine(KOL);
+  } else if (x == "CDLExpress") {
+    setLine(CDLExpress);
+  }
+}

@@ -1,14 +1,30 @@
+//Define Required Variables
+var stationArray;
+var stationCount;
+var lineInfo;
+
 //Current Line Info
-let lineInfo = SHL;
+function setLine(line) {
+  lineInfo = line;
+  // console.log(typeof lineInfo);
+  //Current Station List
+  stationArray = lineInfo.stations;
+  stationCount = stationArray.length;
 
-//Current Station List
-let stationArray = lineInfo.stations;
-let stationCount = stationArray.length;
+  // Remove Current Line from Interchange
+  for (let i = 0; i < stationCount; i++) {
+    let selectedStation = stationArray[i];
+    if (lineInfo.showVar != undefined) {
+      selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo.showVar), 1);
+    } else {
+      selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo), 1);
+    }
+  }
 
-//Remove Current Line from Interchange
-for (let i = 0; i < stationCount; i++) {
-  var selectedStation = stationArray[i];
-  selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo), 1);
+  document.getElementById('lineName').innerHTML = lineInfo.name;
+  document.getElementById('upStationList').innerHTML = "";
+  document.getElementById('dnStationList').innerHTML = "";
+  generateHTML();
 }
 
 //Tellraw generator
@@ -31,12 +47,12 @@ function generateAnnouncement(i,direction) {
 
     if (type == 1) {
       for (let c = 0; c < interchangeCount; c++) {
-        var newInterchangeString = '{"text":"' + selectedStation[c].short + ' ","color":"dark_gray","hoverEvent":{"action":"show_text","value":["",{"text":"' + selectedStation[c].name +'"}]}},' + existingInterchangeString;
+        var newInterchangeString = existingInterchangeString + '{"text":"' + selectedStation[c].short + ' ","color":"dark_gray","hoverEvent":{"action":"show_text","value":["",{"text":"' + selectedStation[c].name +'"}]}},';
         existingInterchangeString = newInterchangeString;
       }
     } else {
       for (let c = 0; c < interchangeCount; c++) {
-        var newInterchangeString = '{"text":"' + selectedStation[c].short + ' ","color":"' + selectedStation[c].color + '","hoverEvent":{"action":"show_text","value":["",{"text":"' + selectedStation[c].name +'"}]}},' + existingInterchangeString;
+        var newInterchangeString = existingInterchangeString + '{"text":"' + selectedStation[c].short + ' ","color":"' + selectedStation[c].color + '","hoverEvent":{"action":"show_text","value":["",{"text":"' + selectedStation[c].name +'"}]}},';
         existingInterchangeString = newInterchangeString;
       }
     }
@@ -46,7 +62,7 @@ function generateAnnouncement(i,direction) {
   // Direction 1 (UP)
   if (direction == 1) {
     //Split into lines
-    var paHeader = 'tellraw @a ["",{"text":"&bsol;n"},{"text":"----=[ ","bold":true,"color":"gold"},{"text":"' + lineInfo.name + '","color":"' + lineInfo.color +'"},{"text":"]=----","bold":true,"color":"gold"},{"text":"&bsol;n"},';
+    var paHeader = 'tellraw @a ["",{"text":"&bsol;n"},{"text":"----=[ ","bold":true,"color":"gold"},{"text":"' + lineInfo.name + '","color":"' + lineInfo.color +'"},{"text":" ]=----","bold":true,"color":"gold"},{"text":"&bsol;n"},';
 
     if (stationArray[i-1] != undefined) {
       paPreviousStation = '{"text":"▽ ","color":"dark_gray"},{"text":"' + stationArray[i-1].name + '","color":"dark_gray"},{"text":"&bsol;n"},';
@@ -76,7 +92,7 @@ function generateAnnouncement(i,direction) {
   } else if (direction == 2) {
     // Direction 2 (DN)
     //Split into lines
-    var paHeader = 'tellraw @a ["",{"text":"&bsol;n"},{"text":"----=[ ","bold":true,"color":"gold"},{"text":"' + lineInfo.name + '","color":"' + lineInfo.color +'"},{"text":"]=----","bold":true,"color":"gold"},{"text":"&bsol;n"},';
+    var paHeader = 'tellraw @a ["",{"text":"&bsol;n"},{"text":"----=[ ","bold":true,"color":"gold"},{"text":"' + lineInfo.name + '","color":"' + lineInfo.color +'"},{"text":" ]=----","bold":true,"color":"gold"},{"text":"&bsol;n"},';
 
     if (stationArray[i+1] != undefined) {
       paPreviousStation = '{"text":"▽ ","color":"dark_gray"},{"text":"' + stationArray[i+1].name + '","color":"dark_gray"},{"text":"&bsol;n"},';
@@ -106,17 +122,18 @@ function generateAnnouncement(i,direction) {
   }
 }
 
-for (let i = 0; i < stationCount; i++) {
-  let existingHTML = document.getElementById("upStationList").innerHTML;
-  let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
-  let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,1); + '</textarea></div></br>';
-  document.getElementById("upStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
-}
+function generateHTML() {
+  for (let i = 0; i < stationCount; i++) {
+    let existingHTML = document.getElementById("upStationList").innerHTML;
+    let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
+    let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,1); + '</textarea></div></br>';
+    document.getElementById("upStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
+  }
 
-for (let i = stationCount-1; i > -1; i--) {
-  let existingHTML = document.getElementById("dnStationList").innerHTML;
-  let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
-  console.log("a");
-  let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,2); + '</textarea></div></br>';
-  document.getElementById("dnStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
+  for (let i = stationCount-1; i > -1; i--) {
+    let existingHTML = document.getElementById("dnStationList").innerHTML;
+    let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
+    let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,2); + '</textarea></div></br>';
+    document.getElementById("dnStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
+  }
 }

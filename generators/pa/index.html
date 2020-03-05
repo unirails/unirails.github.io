@@ -45,6 +45,15 @@
     </br></br>
       <h1>UniRails Textual Announcement Generator</h1>
       <p id="lineName"></p>
+      <form>
+        <select class="custom-select" id="selectLineName" onchange="getLineInput()">
+          <option selected>Select Line</option>
+          <option value="SHL">Shimakaze</option>
+          <option value="KOL">Koshiumi</option>
+          <option value="CDLExpress">Cheung Dai Express</option>
+        </select>
+      </form>
+      <br>
       <button type="button" class="btn btn-info" onclick="toggleUp()">Toggle UP Line</button>
       <button type="button" class="btn btn-info" onclick="toggleDn()">Toggle DN Line</button>
       <br><br><br>
