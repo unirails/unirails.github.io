@@ -74,7 +74,8 @@ var TRC = {name:"幽澳 Tranquil Cove", interchange:[EWL,CEL]};
 var OPH = {name:"歌劇院 Opera House", interchange:[PRL,CEL]};
 var BEN = {name:"本生 Benson", interchange:[]};
 var BAS = {name:"怡灣 Bay Shree", interchange:[CDL,WHL,CSL,SOL]};
-
+var RCI = {name:"鐵研市 Railway City", interchange:[EWL,NSL,NSX,REL,CSL]};
+var ICS = {name:"聯合國總部 ICSU Headquaters", interchange:[PRL,CEL,CSL]};
 
 
 SHL.stations = [STA,DAK,SHI,SHC,SAB,SBC,SHG];
@@ -85,5 +86,5 @@ CDLExpress.stations = [STA,TKP,TIL,DAK,CHD,OMT,MUK,CHG,SHM,WSA,SCY,SUW,STT];
 CDLRExpress.stations = [STA,TKP,TIL,DAK,CHD,OMT,SHM,STT];
 CDLLtdExST.stations = [STA,CHD,SHM,STT];
 CDLLtdExKG.stations = [STA,CHD,CHY,UNI,BNT,SHG];
-CDLLtdExAT.stations = [OMT,SHM,STT];
+CDLLtdExAT.stations = [RCI,ICS,OMT,SHM,STT];
 SOL.stations = [CEN,THB,BAW,TIL,ROS,DAK,KIB,WIN,KES,KYL,CHD,BAS,CHY,REN,FAI,SHC,SAB,ARA,JIN,LEL,ENG,AIR,ALA,RIP,YKP,TRC,OPH,BEN,SUL,CEN,THB,BAW,TIL];
