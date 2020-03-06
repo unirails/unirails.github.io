@@ -15,9 +15,13 @@ function setLine(line) {
   for (let i = 0; i < stationCount; i++) {
     let selectedStation = stationArray[i];
     if (lineInfo.showVar != undefined) {
-      selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo.showVar), 1);
+      if (selectedStation.interchange.indexOf(lineInfo.showVar) != -1) {
+        selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo.showVar), 1);
+      }
     } else {
-      selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo), 1);
+      if (selectedStation.interchange.indexOf(lineInfo) != -1) {
+        selectedStation.interchange.splice(selectedStation.interchange.indexOf(lineInfo), 1);
+      }
     }
   }
 

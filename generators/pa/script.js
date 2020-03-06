@@ -31,5 +31,19 @@ function getLineInput() {
     setLine(KOL);
   } else if (x == "CDLExpress") {
     setLine(CDLExpress);
+  } else if (x == "CDLRegular") {
+    setLine(CDLRegular);
+  } else if (x == "CIL") {
+    setLine(CIL);
+  } else if (x == "CDLRExpress") {
+    setLine(CDLRExpress);
+  } else if (x == "CDLLtdExST") {
+    setLine(CDLLtdExST);
+  } else if (x == "CDLLtdExKG") {
+    setLine(CDLLtdExKG);
+  } else if (x == "CDLLtdExAT") {
+    setLine(CDLLtdExAT);
+  } else if (x == "SOL") {
+    setLine(SOL);
   }
 }

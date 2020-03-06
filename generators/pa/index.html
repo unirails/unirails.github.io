@@ -44,13 +44,20 @@
     <div class="content">
     </br></br>
       <h1>UniRails Textual Announcement Generator</h1>
-      <p id="lineName"></p>
+      <p id="lineName">Please Select Line</p>
       <form>
         <select class="custom-select" id="selectLineName" onchange="getLineInput()">
-          <option selected>Select Line</option>
+          <option selected disabled>Select Line</option>
           <option value="SHL">Shimakaze</option>
           <option value="KOL">Koshiumi</option>
+          <option value="CIL">Citylink</option>
+          <option value="CDLRegular">Cheung Dai Regular</option>
           <option value="CDLExpress">Cheung Dai Express</option>
+          <option value="CDLRExpress">Cheung Dai Rapid Express</option>
+          <option value="CDLLtdExST">Cheung Dai LtdEx Stanley</option>
+          <option value="CDLLtdExKG">Cheung Dai LtdEx Kaigan</option>
+          <option value="CDLLtdExAT">Cheung Dai LtdEx Atago</option>
+          <option value="SOL">Stagecoach Outer Loop</option>
         </select>
       </form>
       <br>
