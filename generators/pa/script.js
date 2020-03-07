@@ -45,5 +45,7 @@ function getLineInput() {
     setLine(CDLLtdExAT);
   } else if (x == "SOL") {
     setLine(SOL);
+  } else if (x == "HOL") {
+    setLine(HOL);
   }
 }

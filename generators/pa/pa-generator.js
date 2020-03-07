@@ -24,7 +24,6 @@ function setLine(line) {
       }
     }
   }
-
   document.getElementById('lineName').innerHTML = lineInfo.name;
   document.getElementById('upStationList').innerHTML = "";
   document.getElementById('dnStationList').innerHTML = "";
@@ -129,14 +128,14 @@ function generateAnnouncement(i,direction) {
 function generateHTML() {
   for (let i = 0; i < stationCount; i++) {
     let existingHTML = document.getElementById("upStationList").innerHTML;
-    let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
+    let stationNameHeader = "<h2>" + i + " " + stationArray[i].name + "</h2>";
     let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,1); + '</textarea></div></br>';
     document.getElementById("upStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
   }
 
   for (let i = stationCount-1; i > -1; i--) {
     let existingHTML = document.getElementById("dnStationList").innerHTML;
-    let stationNameHeader = "<h2>" + stationArray[i].name + "</h2>";
+    let stationNameHeader = "<h2>" + i + " " + stationArray[i].name + "</h2>";
     let announcementString = '<div class="form-group"><textarea class="form-control"rows="5" onclick="this.focus();this.select()" id="station-' + i + '" readonly>' + generateAnnouncement(i,2); + '</textarea></div></br>';
     document.getElementById("dnStationList").innerHTML = existingHTML + stationNameHeader + announcementString;
   }
