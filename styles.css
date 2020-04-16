@@ -20,7 +20,7 @@ body, html{
 
 .head {
   height: 100%;
-  background-image: url(img/2017-07-31_13.49.23.png);
+  background-image: url(img/sta-4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,9 +37,149 @@ body, html{
   justify-content: center;
   text-align: center;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .head-content {
+  color: white;
+}
+
+.info {
+  background-color: black;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.cities {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.cities .batcave {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/bat-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.batcave .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cities .wiedergeburt {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/wie-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.wiedergeburt .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cities .stagecoach {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/sta-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.stagecoach .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.unirails-heading {
+  padding: 50px 30px;
+  color: white;
+  background-color: #0288D1;
+  text-align: center;
+}
+
+.unirails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background-image: url(img/ur-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: white;
+}
+
+.social-heading {
+  padding: 50px 30px;
+  color: white;
+  background-color: #C62828;
+  text-align: center;
+}
+
+.social {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.social .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/group.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.group .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/page.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.page .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #212121;
   color: white;
 }
