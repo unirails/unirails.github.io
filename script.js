@@ -6,3 +6,7 @@ function sizeContent() {
   var screenHeight = document.getElementsByTagName('body')[0].clientHeight;
   document.getElementsByClassName('content')[0].style.height = screenHeight-navHeight + "px";
 }
+
+$(document).ready(function(){
+  $('#maincontent').fadeIn();
+})
