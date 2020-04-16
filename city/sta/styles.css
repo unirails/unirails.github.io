@@ -1,0 +1,350 @@
+body, html{
+  height: 100%;
+  margin: 0px;
+}
+
+.head {
+  height: 500px;
+  background-image: url(img/sta-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.head::-webkit-scrollbar{
+  display: none;
+}
+
+.coloroverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.head-content {
+  color: white;
+}
+
+.central {
+  background-color: #AD1457;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.central-gallery {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.central-gallery .p1 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/sta-4.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.central-gallery .p1 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.central-gallery .p2 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/sta-5.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.central-gallery .p2 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.central-gallery .p3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/sta-3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.central-gallery .p3 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.dak {
+  background-color: #EC407A;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.dak-gallery {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.dak-gallery .p1 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/swd-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.dak-gallery .p1 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.dak-gallery .p2 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/swd-2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.dak-gallery .p2 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.dak-gallery .p3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/swd-3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.dak-gallery .p3 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.shc {
+  background-color: #0097A7;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.shc-gallery {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.shc-gallery .p1 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/shc-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.shc-gallery .p1 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.shc-gallery .p2 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/shc-2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.shc-gallery .p2 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.shc-gallery .p3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/shc-3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.shc-gallery .p3 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.uni {
+  background-color: #4FC3F7;
+  padding: 50px 30px;
+  color: black;
+  text-align: center;
+}
+
+.uni-gallery {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.uni-gallery .p1 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/uni-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.uni-gallery .p1 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.uni-gallery .p2 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/uni-2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.uni-gallery .p2 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.uni-gallery .p3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/uni-3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.uni-gallery .p3 .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none
+}
+
+.social-heading {
+  padding: 50px 30px;
+  color: white;
+  background-color: #C62828;
+  text-align: center;
+}
+
+.social {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.social .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/group.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.group .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/page.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.page .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #212121;
+  color: white;
+}
