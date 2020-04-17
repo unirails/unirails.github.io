@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="./iv-viewer/dist/iv-viewer.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/iv-viewer/dist/iv-viewer.css"/> -->
 </head>
-<!-- <body onresize="sizeContent()"> -->
-<body onload="viewer.refresh();" onresize="sizeContent();">
+<body onload="" onresize="sizeContent();">
   <div class="navcontainer">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#">
@@ -42,7 +41,12 @@
       </div>
     </nav>
   </div>
-  <img id="image" class="pannable-image" src="sym.png" data-high-res-src="sym.png" alt="sym" style="">
+  <div class="main">
+    <div class="container-fluid">
+      <!-- <img src="sym.png"></img> -->
+      <img id="image" class="pannable-image" src="sym.png" data-high-res-src="sym.png" alt="sym" style="">
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

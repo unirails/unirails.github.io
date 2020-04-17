@@ -4,9 +4,9 @@ function sizeContent() {
   var screenWidth = document.getElementsByTagName('body')[0].clientWidth;
   // document.getElementById('image').style.height = screenHeight-navHeight + "px";
   // document.getElementById('image').style.width = screenWidth + "px";
-  document.getElementsByClassName('iv-container')[0].style.height = screenHeight-navHeight + "px";
-  document.getElementsByClassName('iv-container')[0].style.width = screenWidth + "px";
-  document.getElementsByClassName('iv-image')[0].style.height = screenHeight-navHeight + "px";
+  // document.getElementsByClassName('iv-container')[0].style.height = screenHeight-navHeight + "px";
+  // document.getElementsByClassName('iv-container')[0].style.width = screenWidth + "px";
+  // document.getElementsByClassName('iv-image')[0].style.height = screenHeight-navHeight + "px";
   // document.getElementsByClassName('iv-image')[0].style.width = screenWidth + "px";
 }
 
@@ -16,4 +16,5 @@ viewer.load('sym.png', 'sym.png');
 viewer.zoom(100, { x: 500, y: 500 });
 // document.getElementById("image").classList.add('.img-fluid');
 
+viewer.refresh();
 sizeContent();
