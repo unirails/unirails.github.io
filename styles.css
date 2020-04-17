@@ -5,6 +5,7 @@ body, html{
 
 .content {
   display: none;
+  height: 100%;
 }
 
 .head {

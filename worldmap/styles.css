@@ -2,50 +2,15 @@ body, html{
   height: 100%;
   margin: 0px;
   background-color: black;
+  overflow-y: hidden;
 }
 
-/* body {
-  display: flex;
-  flex-flow: column;
-}
-
-.navcontainer {
-  flex: 0 1 auto;
-} */
-
-/* .content {
-  display: flex;
-  flex-flow: column;
-  height: 90%;
-} */
-
-.head {
-  height: 100%;
-  background-image: url(img/2017-07-31_13.49.23.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  overflow-y: scroll;
-}
-
-.head::-webkit-scrollbar{
-  display: none;
-}
-
-.coloroverlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.head-content {
-  color: white;
+.content {
+  height: 92%;
 }
 
 iframe {
   border: 0px;
   margin: 0px;
+  height: 100%;
 }
