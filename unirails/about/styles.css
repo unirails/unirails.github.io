@@ -1,0 +1,178 @@
+body, html{
+  height: 100%;
+  margin: 0px;
+}
+
+.content {
+  display: none;
+  height: 100%;
+}
+
+.head {
+  height: 100%;
+  background-image: url(../../img/ur-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: scroll;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.head::-webkit-scrollbar{
+  display: none;
+}
+
+.coloroverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.head-content {
+  color: black;
+}
+
+.about-blurb {
+  background-color: #424242;
+  padding: 50px 0px;
+  color: white;
+  text-align: left;
+}
+
+.about-blurb p {
+  font-size: 18px;
+}
+
+.about-gallery {
+  /* font-family: 'Playfair Display', serif; */
+  text-align: center;
+}
+
+.about-gallery .p1 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(img/ur-2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.about-gallery .p2 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(img/ur-3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.about-gallery .p3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(img/ur-4.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  padding: 0px;
+}
+
+.ur-members {
+  background-color: #D84315;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.member-details {
+  background-color: #F5F5F5;
+  /* background-image: url(img/ur-5.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 250px; */
+  height: 200px;
+}
+
+.social-heading {
+  padding: 50px 30px;
+  color: white;
+  background-color: #C62828;
+  text-align: center;
+}
+
+.social {
+  color: white;
+  /* font-family: 'Playfair Display', serif; */
+  text-align: center;
+}
+
+.social .fb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/fb.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.social .coloroverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social .ig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/ur-5.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+}
+
+.social .yt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  background-image: url(img/yt.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  padding: 0px;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #212121;
+  color: white;
+}
