@@ -47,5 +47,7 @@ function getLineInput() {
     setLine(SOL);
   } else if (x == "HOL") {
     setLine(HOL);
+  } else if (x == "EWL") {
+    setLine(EWL);
   }
 }

@@ -17,13 +17,13 @@ var HOL = {name:"北陸綫 Hokuriku Line", short:"HOL", color:"dark_purple"};
 var CIL = {name:"貫城綫 Citylink", short:"CIL", color:"yellow"};
 var RIL = {name:"臨空綫 Rinku Line", short:"RIL", color:"gold"};
 var CEL = {name:"中央綫 Central Line", short:"CEL", color:"dark_blue"};
-var CDLRegular = {name:"張底綫各停 Cheung Dai Line Regular", short:"CDL", color:"gold", showVar:CDL};
-var CDLExpress = {name:"張底綫急行 Cheung Dai Line Express", short:"CDL", color:"gold", showVar:CDL};
+var SNL = {name:"雪城綫 Snowy Line", short:"SNL", color:"gold"};
+var CDLRegular = {name:"張底綫各停 Cheung Dai Line Regular", short:"CDL", color:"yellow", showVar:CDL};
+var CDLExpress = {name:"張底綫急行 Cheung Dai Line Express", short:"CDL", color:"yellow", showVar:CDL};
 var CDLRExpress = {name:"張底綫快速急行 Cheung Dai Line R.Express", short:"CDL", color:"gold", showVar:CDL};
-var CDLLtdExST = {name:"特急 史丹利 Ltd Express Stanley", short:"CDL", color:"gold", showVar:CDL};
-var CDLLtdExKG = {name:"特急 海岸 Ltd Express Kaigan", short:"CDL", color:"gold", showVar:CDL};
-var CDLLtdExAT = {name:"特急 愛宕 Ltd Express Atago", short:"CDL", color:"gold", showVar:CDL};
-
+var CDLLtdExST = {name:"特急 史丹利 Ltd Express Stanley", short:"CDL", color:"yellow", showVar:CDL};
+var CDLLtdExKG = {name:"特急 海岸 Ltd Express Kaigan", short:"CDL", color:"yellow", showVar:CDL};
+var CDLLtdExAT = {name:"特急 愛宕 Ltd Express Atago", short:"CDL", color:"yellow", showVar:CDL};
 
 //Station Listing
 var STA = {name:"飛渡市 Stagecoach", interchange:[NSL,PRL,NAL,NEX,CDL,SHL]};
@@ -37,7 +37,7 @@ var ARA = {name:"荒島 Arashima", interchange:[SOL,HOL,KOL]};
 var JOY = {name:"祖亞 Joya", interchange:[CIL,RIL]};
 var GLR = {name:"格拉芬河 Glavon River", interchange:[]};
 var OWE = {name:"奧運 Owen", interchange:[CIL,PRL,EWL]};
-var SUL = {name:"雪琳 Suet Lam", interchange:[CIL,CEL,SOL]};
+var SUL = {name:"雪琳 Suet Lam", interchange:[CIL,CEL,SOL,SNL]};
 var CEN = {name:"市中心 Central", interchange:[NSL,CEL,CIL]};
 var THB = {name:"大灝灣 Ta Ho Bay", interchange:[CEL,CIL]};
 var BAW = {name:"蝙洞西 Batcave West", interchange:[]};
@@ -74,9 +74,14 @@ var TRC = {name:"幽澳 Tranquil Cove", interchange:[EWL,CEL]};
 var OPH = {name:"歌劇院 Opera House", interchange:[PRL,CEL]};
 var BEN = {name:"本生 Benson", interchange:[]};
 var BAS = {name:"怡灣 Bay Shree", interchange:[CDL,WHL,CSL,SOL]};
-var RCI = {name:"鐵研市 Railway City", interchange:[EWL,NSL,NSX,REL,CSL]};
+var RCI = {name:"鐵研市 Railway City", interchange:[EWL,NSL,NSX,REL,CSL,SNL]};
 var ICS = {name:"聯合國總部 ICSU Headquaters", interchange:[PRL,CEL,CSL]};
 var RIT = {name:"臨空城 Rinku Town", interchange:[]};
+var EAP = {name:"東角 East Point", interchange:[]};
+var WEP = {name:"西角 West Point", interchange:[]};
+var CRT = {name:"郵輪碼頭 Cruise Terminal", interchange:[CSL,CEL]};
+var CHL = {name:"澤琳 Chak Lam", interchange:[PRL]};
+var BAY = {name:"灣岸 Baycoast", interchange:[]};
 
 
 SHL.stations = [STA,DAK,SHI,SHC,SAB,SBC,SHG];
@@ -89,4 +94,5 @@ CDLLtdExST.stations = [STA,CHD,SHM,STT];
 CDLLtdExKG.stations = [STA,CHD,CHY,UNI,BNT,SHG];
 CDLLtdExAT.stations = [RCI,ICS,OMT,SHM,STT];
 SOL.stations = [CEN,THB,BAW,TIL,ROS,DAK,KIB,WIN,KES,KYL,CHD,BAS,CHY,REN,FAI,SHC,SAB,ARA,JIN,LEL,ENG,AIR,AMA,RIT,RIP,YKP,TRC,OPH,BEN,SUL,CEN,THB,BAW,TIL];
-HOL.stations = [SHG,ARA,JIN,LEL]
+HOL.stations = [SHG,ARA,JIN,LEL];
+EWL.stations = [OWE,TRC,EAP,RCI,WEP,CRT,CHL,BAY,DAK];
