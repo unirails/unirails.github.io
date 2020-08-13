@@ -49,5 +49,7 @@ function getLineInput() {
     setLine(HOL);
   } else if (x == "EWL") {
     setLine(EWL);
+  } else if (x == "PRL") {
+    setLine(PRL);
   }
 }
