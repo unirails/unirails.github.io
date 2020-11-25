@@ -53,5 +53,7 @@ function getLineInput() {
     setLine(PRL);
   } else if (x == "CEL") {
     setLine(CEL);
+  } else if (x == "REL") {
+    setLine(REL);
   }
 }
